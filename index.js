@@ -12,7 +12,6 @@ const app = express()
 // Require is here so we can delete it from cache when files change (*)
 app.use("/api", (req, res, next) => require("@root/server")(req, res, next)); // eslint-disable-line
 
-
 const watcher = chokidar.watch('server')
 watcher.on('ready', () => {
   watcher.on('all', () => {
