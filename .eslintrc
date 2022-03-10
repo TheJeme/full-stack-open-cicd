@@ -5,7 +5,6 @@
     "browser": true
   },
   "rules": {
-    "linebreak-style": ["error", "windows"],
     "semi": ["error", "never"],
     "max-len": [1, 200],
     "no-shadow": 0,
