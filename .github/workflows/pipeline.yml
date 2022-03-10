@@ -18,13 +18,8 @@ jobs:
           node-version: "16"
       - name: npm install
         run: npm install
-      - name: npm update
-        run: npm update
       - name: lint
         run: npm run lint
-      - name: build
-        id: build
-        run: npm run build
       - uses: akhileshns/heroku-deploy@v3.8.9
         name: deploy
         id: deploy
